@@ -58,33 +58,30 @@ def prestamoCicla():
             menuPpal()
         nuevoPrestamo = [tarjetaPrestamo, bicicleta, origen, destino]
         prestamos.append(nuevoPrestamo)
-    
-
-
 
 def listarUsuarios():
-    for i in range(0, len(usuarios)):
-        usuario = usuarios[i]
-        for j in range(0, len(usuario[j])):
-            print("")
-            print(f"Usuario No.  {j + 1}")
-            print(f"No tarjeta : {usuario[0]}")
-            print(f"Nombre : {usuario[1]}")
-            print(f"Apellido : {usuario[2]}")
-            print(f"Correo : {usuario[3]}")
-            print("")
+    index = 0
+    for usuario in usuarios:
+        index += 1
+        print("")
+        print(f"Usuario No.  {index}")
+        print(f"No tarjeta : {usuario[0]}")
+        print(f"Nombre : {usuario[1]}")
+        print(f"Apellido : {usuario[2]}")
+        print(f"Correo : {usuario[3]}")
+        print("")
 
 def listarPrestamos():
-    for i in range(0, len(prestamos)):
-        prestamo = prestamos[i]
-        for j in range(0, len(prestamo[j])):
-            print("")
-            print(f"Prestamo No.  {i + 1}")
-            print(f"No tarjeta : {prestamo[0]}")
-            print(f"Bicicleta : {prestamo[1]}")
-            print(f"Origen : {prestamo[2]}")
-            print(f"Destino : {prestamo[3]}")
-            print("")
+    index = 0
+    for prestamo in prestamos:
+        index += 1
+        print("")
+        print(f"Prestamo No.  {index}")
+        print(f"No tarjeta : {prestamo[0]}")
+        print(f"Bicicleta : {prestamo[1]}")
+        print(f"Origen : {prestamo[2]}")
+        print(f"Destino : {prestamo[3]}")
+        print("")
 
 def menuPpal():
     control = 0
